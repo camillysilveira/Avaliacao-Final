@@ -13,30 +13,136 @@
   --white: #ffffff;
   --border-color: #fff5de;
   --box-color: #fffbf4;
+  --button-color: #ffe175;
 }
 
 header {
   position: absolute;
   display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
   z-index: 100;
   background: url("./assets/bg.svg");
   background-size: cover;
-  padding: 7.8rem 7.9rem 7.9rem 8rem;
+  width: 100%;
+  height: 20rem;
 }
 
 main {
   display: grid;
   position: relative;
+  justify-content: center;
   top: 30rem;
-  padding: 4.8re 2.4rem 4.8rem 2.4rem;
+  padding: 4.8rem;
+  width: 100%;
+  margin: -4.8rem auto;
 }
 
 main h2 {
-  width: 16.7rem;
+  position: relative;
+  text-align: center;
+  width: 18.7rem;
   height: 2.9rem;
   font-weight: 600;
-  font-size: 2.4rem;
-  line-height: 2.9rem;
+  top: -4.8rem;
+  font-size: 2rem;
+}
+
+.La-Cuma {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.La-Cuma .icons-1 {
+  width: 100%;
+  max-width: 12rem;
+  height: 12rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: -3rem;
+  margin-bottom: 0.9rem;
+  padding-bottom: 2.1rem;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+
+.La-Cuma h3 {
+  color: var(--dark-color);
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 2.5rem;
+}
+
+/*.La-Cuma .icons-1 .favorite {
+  position: absolute;
+  top: 1.5rem;
+  left: 10rem;
+}*/
+
+.La-Cuma p {
+  width: 100%;
+  max-width: 21rem;
+  margin-top: -10.6rem;
+  text-align: center;
+  color: var(--dark-color);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.La-Cuma h4 {
+  width: 100%;
+  height: 3.9rem;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-top: 1.6rem;
+}
+
+.La-Cuma button {
+  background-color: var(--primary-color);
+  width: 15rem;
+  height: 3rem;
+  margin-top: 4.5rem;
+
+  padding: 0 2rem;
+  border: none;
+  border-radius: 2.5rem;
+  font: 500 1rem var(--body-font);
+  transition: background 0.3s;
+  text-transform: uppercase;
+
+  position: relative;
+}
+
+.button:hover {
+  background: var(--button-color);
+}
+
+.La-Cuma .box {
+  width: 100%;
+  height: 80%;
+  border-radius: 2rem;
+  border: 2px solid var(--border-color);
+  background: var(--box-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.8rem;
+  padding-bottom: 2.1rem;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    width: 100%;
+  }
 }
