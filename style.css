@@ -18,16 +18,18 @@
 
 header {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  z-index: 100;
   background: url("./assets/bg.svg");
   background-size: cover;
   width: 100%;
-  height: 20rem;
+  height: 30rem;
+}
+
+header .container {
+  position: absolute;
+  top: 4rem;
+  left: -2rem;
+  z-index: 10;
+  padding: 7.8rem 8rem 7.8rem 8rem;
 }
 
 main {
@@ -41,32 +43,49 @@ main {
 }
 
 main h2 {
-  position: relative;
-  text-align: center;
-  width: 18.7rem;
-  height: 2.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark-color);
+  margin-top: -4.8rem;
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
   font-weight: 600;
-  top: -4.8rem;
-  font-size: 2rem;
+  line-height: 2.5rem;
+  padding: 4.8rem 2.4rem 5rem 2.4rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5.5rem 1.5rem;
 }
 
 .La-Cuma {
+  width: 100%;
+  border-radius: 1.6rem;
+}
+
+.La-Cuma .box {
+  max-width: 32rem;
+  min-height: 30rem;
+  border-radius: 1.6rem;
+  border: 2px solid var(--border-color);
+  background: var(--box-color);
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  padding: 5rem 2.5rem;
 }
 
-.La-Cuma .icons-1 {
-  width: 100%;
-  max-width: 12rem;
-  height: 12rem;
+.box .icons-1 {
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  margin-top: -3rem;
-  margin-bottom: 0.9rem;
-  padding-bottom: 2.1rem;
+
+  margin-top: -9.6rem;
+  margin-right: -1.5rem;
+  gap: 1rem;
 }
 
 .info {
@@ -74,72 +93,150 @@ main h2 {
   margin-bottom: 3.6rem;
 }
 
-.La-Cuma h3 {
+.info h3 {
   color: var(--dark-color);
+  font-size: 1.9rem;
   font-weight: 600;
-  font-size: 1.5rem;
-  line-height: 2.4rem;
-  margin-bottom: 2.5rem;
+  line-height: 2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
 }
 
-/*.La-Cuma .icons-1 .favorite {
-  position: absolute;
-  top: 1.5rem;
-  left: 10rem;
-}*/
-
-.La-Cuma p {
-  width: 100%;
-  max-width: 21rem;
-  margin-top: -10.6rem;
+.info p {
   text-align: center;
   color: var(--dark-color);
-  font-weight: 400;
+  width: 21.5rem;
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4rem;
 }
 
-.La-Cuma h4 {
-  width: 100%;
-  height: 3.9rem;
+.info h4 {
+  color: var(--dark-color);
+  font-size: 2.5rem;
   font-weight: 600;
-  font-size: 3rem;
-  margin-top: 1.6rem;
+  line-height: 3.8rem;
 }
 
-.La-Cuma button {
-  background-color: var(--primary-color);
-  width: 15rem;
-  height: 3rem;
-  margin-top: 4.5rem;
+.La-Cuma .btn {
+  background: var(--primary-color);
 
-  padding: 0 2rem;
+  text-align: center;
+  max-width: 20.6rem;
+  height: 4.1rem;
+  margin: 0 0.45rem;
+  margin-top: 4rem;
+  padding: 1.2rem 2.5rem 1.2rem 4rem;
   border: none;
   border-radius: 2.5rem;
-  font: 500 1rem var(--body-font);
-  transition: background 0.3s;
+
+  transition: all 0.3s ease;
+}
+
+.La-Cuma .btn span {
+  font-size: 1.4rem;
+  font-family: var(--dark-color);
+  padding: 1.2rem auto;
   text-transform: uppercase;
-
-  position: relative;
+  letter-spacing: 5%;
 }
 
-.button:hover {
-  background: var(--button-color);
+.La-Cuma .btn:hover {
+  background-color: var(--button-color);
+  color: var(--dark-color);
 }
 
-.La-Cuma .box {
+/*.La-Menta {
   width: 100%;
-  height: 80%;
-  border-radius: 2rem;
+  max-width: 37.5rem;
+  border-radius: 1.6rem;
+  padding: 0.5rem;
+}
+
+.La-Menta .box {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.6rem;
   border: 2px solid var(--border-color);
   background: var(--box-color);
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 1.8rem;
+  padding: 3.24rem 3rem;
   padding-bottom: 2.1rem;
 }
+
+.box .icons-2 {
+  display: flex;
+  justify-content: center;
+  justify-content: right;
+  width: 100%;
+  max-width: 12rem;
+  height: 12rem;
+  margin-top: -9.6rem;
+  margin-right: -1.5rem;
+  gap: 1rem;
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 3.6rem;
+}
+
+.info h3 {
+  color: var(--dark-color);
+  font-size: 1.9rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 2rem;
+}
+
+.info p {
+  text-align: center;
+  color: var(--dark-color);
+  width: 21.5rem;
+  height: 4.8rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.4rem;
+}
+
+.info h4 {
+  color: var(--dark-color);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+}
+
+.La-Menta .btn {
+  background: var(--primary-color);
+
+  text-align: center;
+  max-width: 20.6rem;
+  height: 4.1rem;
+  margin: 0 0.45rem;
+  margin-top: 4rem;
+  padding: 1.2rem 2.5rem 1.2rem 4rem;
+  border: none;
+  border-radius: 2.5rem;
+
+  transition: all 0.3s ease;
+}
+
+.La-Menta .btn span {
+  font-size: 1.4rem;
+  font-family: var(--dark-color);
+  padding: 1.2rem auto;
+  text-transform: uppercase;
+  letter-spacing: 5%;
+}
+
+.La-Menta .btn:hover {
+  background-color: var(--button-color);
+  color: var(--dark-color);
+}*/
 
 @media screen and (max-width: 480px) {
   body {
