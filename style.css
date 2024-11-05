@@ -11,8 +11,8 @@
   --second-color: #60bb28;
   --third-color: #f9f9f9;
   --white: #ffffff;
-  --border-color: #fff5de;
-  --box-color: #fffbf4;
+  --border-color: #fceac0;
+  --box-color: #fcf5e3;
   --button-color: #ffe175;
 }
 
@@ -21,25 +21,23 @@ header {
   background: url("./assets/bg.svg");
   background-size: cover;
   width: 100%;
-  height: 30rem;
+  height: 20rem;
 }
 
-header .container {
+header .img {
   position: absolute;
-  top: 4rem;
-  left: -2rem;
+  left: -2.4rem;
   z-index: 10;
-  padding: 7.8rem 8rem 7.8rem 8rem;
+  padding: 7.8rem 8rem;
+  margin-top: -1.8rem;
 }
 
 main {
   display: grid;
   position: relative;
   justify-content: center;
-  top: 30rem;
-  padding: 4.8rem;
+  top: 17.6rem;
   width: 100%;
-  margin: -4.8rem auto;
 }
 
 main h2 {
@@ -47,12 +45,10 @@ main h2 {
   align-items: center;
   justify-content: center;
   color: var(--dark-color);
-  margin-top: -4.8rem;
-  margin-bottom: 5rem;
   font-size: 1.8rem;
   font-weight: 600;
   line-height: 2.5rem;
-  padding: 4.8rem 2.4rem 5rem 2.4rem;
+  padding: 4.8rem 2.4rem;
 }
 
 .menu {
@@ -61,127 +57,35 @@ main h2 {
   gap: 5.5rem 1.5rem;
 }
 
-.La-Cuma {
+.container {
   width: 100%;
   border-radius: 1.6rem;
+  margin: 2.4rem 0 2.4rem;
 }
 
-.La-Cuma .box {
-  max-width: 32rem;
-  min-height: 30rem;
-  border-radius: 1.6rem;
-  border: 2px solid var(--border-color);
-  background: var(--box-color);
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5rem 2.5rem;
-}
-
-.box .icons-1 {
-  display: flex;
-  justify-content: center;
-
-  margin-top: -9.6rem;
-  margin-right: -1.5rem;
-  gap: 1rem;
-}
-
-.info {
-  text-align: center;
-  margin-bottom: 3.6rem;
-}
-
-.info h3 {
-  color: var(--dark-color);
-  font-size: 1.9rem;
-  font-weight: 600;
-  line-height: 2rem;
-  letter-spacing: 0.5px;
-  margin-bottom: 2rem;
-}
-
-.info p {
-  text-align: center;
-  color: var(--dark-color);
-  width: 21.5rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.4rem;
-}
-
-.info h4 {
-  color: var(--dark-color);
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 3.8rem;
-}
-
-.La-Cuma .btn {
-  background: var(--primary-color);
-
-  text-align: center;
-  max-width: 20.6rem;
-  height: 4.1rem;
-  margin: 0 0.45rem;
-  margin-top: 4rem;
-  padding: 1.2rem 2.5rem 1.2rem 4rem;
-  border: none;
-  border-radius: 2.5rem;
-
-  transition: all 0.3s ease;
-}
-
-.La-Cuma .btn span {
-  font-size: 1.4rem;
-  font-family: var(--dark-color);
-  padding: 1.2rem auto;
-  text-transform: uppercase;
-  letter-spacing: 5%;
-}
-
-.La-Cuma .btn:hover {
-  background-color: var(--button-color);
-  color: var(--dark-color);
-}
-
-/*.La-Menta {
-  width: 100%;
-  max-width: 37.5rem;
-  border-radius: 1.6rem;
-  padding: 0.5rem;
-}
-
-.La-Menta .box {
+.container .box {
   width: 100%;
   height: 100%;
   border-radius: 1.6rem;
-  border: 2px solid var(--border-color);
+  border: 1px solid var(--border-color);
   background: var(--box-color);
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3.24rem 3rem;
-  padding-bottom: 2.1rem;
 }
 
-.box .icons-2 {
+.box .icons {
   display: flex;
   justify-content: center;
-  justify-content: right;
-  width: 100%;
-  max-width: 12rem;
-  height: 12rem;
-  margin-top: -9.6rem;
+
+  margin-top: -4rem;
   margin-right: -1.5rem;
   gap: 1rem;
 }
 
 .info {
   text-align: center;
-  margin-bottom: 3.6rem;
 }
 
 .info h3 {
@@ -190,53 +94,129 @@ main h2 {
   font-weight: 600;
   line-height: 2rem;
   letter-spacing: 0.5px;
-  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .info p {
   text-align: center;
   color: var(--dark-color);
   width: 21.5rem;
-  height: 4.8rem;
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1.4rem;
+  line-height: 1.8rem;
+  margin-top: 1.5rem;
 }
 
 .info h4 {
   color: var(--dark-color);
   font-size: 2.5rem;
   font-weight: 600;
-  line-height: 3.8rem;
+  line-height: 8rem;
 }
 
-.La-Menta .btn {
+.container .btn {
   background: var(--primary-color);
 
   text-align: center;
-  max-width: 20.6rem;
-  height: 4.1rem;
-  margin: 0 0.45rem;
-  margin-top: 4rem;
-  padding: 1.2rem 2.5rem 1.2rem 4rem;
+  margin-top: 2rem;
+  margin-bottom: -20rem;
+  padding: 1.2rem 1.5rem;
   border: none;
   border-radius: 2.5rem;
 
   transition: all 0.3s ease;
 }
 
-.La-Menta .btn span {
-  font-size: 1.4rem;
+.container .btn span {
+  font-size: 1.2rem;
   font-family: var(--dark-color);
-  padding: 1.2rem auto;
   text-transform: uppercase;
-  letter-spacing: 5%;
+  padding: 0 1.5rem;
 }
 
-.La-Menta .btn:hover {
+.container .btn:hover {
   background-color: var(--button-color);
   color: var(--dark-color);
-}*/
+}
+
+.about {
+  position: relative;
+  overflow: hidden;
+  margin-top: 6.4rem;
+  background-color: var(--box-color);
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+}
+
+.end-info img {
+  display: flex;
+  align-items: center;
+
+  padding: 6.4rem 2.4rem;
+}
+
+.welcome h2 {
+  font-size: 2.4rem;
+  padding: 2.4rem 0;
+  margin-right: 2.4rem;
+  margin-bottom: -3.2rem;
+  margin-top: -6.4rem;
+}
+
+.welcome .yellow {
+  color: #ffbd48;
+}
+
+.welcome .red {
+  color: #ff3536;
+}
+
+.welcome .green {
+  color: #60bb28;
+}
+
+.welcome p {
+  width: 100%;
+  max-width: 32.7rem;
+  height: 24.3rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 3.2rem;
+  color: var(--dark-color);
+  opacity: 80%;
+
+  text-align: start;
+}
+
+.container .btn-more {
+  background: var(--primary-color);
+
+  margin-left: 2.4rem;
+
+  max-width: 20rem;
+  height: 4rem;
+  border: none;
+  border-radius: 2.5rem;
+  margin-bottom: 6rem;
+
+  transition: all 0.3s ease;
+}
+
+.container .btn-more span {
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1.3rem 4rem 1.2rem 4rem;
+  text-transform: uppercase;
+}
+
+.container .btn-more:hover {
+  background-color: var(--button-color);
+  color: var(--dark-color);
+}
 
 @media screen and (max-width: 480px) {
   body {
